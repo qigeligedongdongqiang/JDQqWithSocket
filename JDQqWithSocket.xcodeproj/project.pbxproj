@@ -13,6 +13,12 @@
 		D21754E21D65AE870055F55F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21754E01D65AE870055F55F /* Main.storyboard */; };
 		D21754E41D65AE870055F55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21754E31D65AE870055F55F /* Assets.xcassets */; };
 		D21754E71D65AE870055F55F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21754E51D65AE870055F55F /* LaunchScreen.storyboard */; };
+		D21754F61D65C8BD0055F55F /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = D21754F51D65C8BD0055F55F /* messages.plist */; };
+		D21754F91D65C92E0055F55F /* JDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D21754F81D65C92E0055F55F /* JDMessage.m */; };
+		D21754FC1D65CC7C0055F55F /* JDMessageCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D21754FB1D65CC7C0055F55F /* JDMessageCellFrame.m */; };
+		D21755001D65D5290055F55F /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D21754FF1D65D5290055F55F /* NSString+Extension.m */; };
+		D21755031D65D8880055F55F /* JDMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D21755021D65D8880055F55F /* JDMessageCell.m */; };
+		D21755061D65E2120055F55F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D21755051D65E2120055F55F /* UIImage+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		D21754E31D65AE870055F55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D21754E61D65AE870055F55F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D21754E81D65AE870055F55F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21754F51D65C8BD0055F55F /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		D21754F71D65C92E0055F55F /* JDMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessage.h; sourceTree = "<group>"; };
+		D21754F81D65C92E0055F55F /* JDMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessage.m; sourceTree = "<group>"; };
+		D21754FA1D65CC7C0055F55F /* JDMessageCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessageCellFrame.h; sourceTree = "<group>"; };
+		D21754FB1D65CC7C0055F55F /* JDMessageCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageCellFrame.m; sourceTree = "<group>"; };
+		D21754FE1D65D5290055F55F /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		D21754FF1D65D5290055F55F /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		D21755011D65D8880055F55F /* JDMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMessageCell.h; sourceTree = "<group>"; };
+		D21755021D65D8880055F55F /* JDMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMessageCell.m; sourceTree = "<group>"; };
+		D21755041D65E2120055F55F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		D21755051D65E2120055F55F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +75,7 @@
 		D21754D61D65AE870055F55F /* JDQqWithSocket */ = {
 			isa = PBXGroup;
 			children = (
-				D21754DA1D65AE870055F55F /* AppDelegate.h */,
-				D21754DB1D65AE870055F55F /* AppDelegate.m */,
-				D21754DD1D65AE870055F55F /* ViewController.h */,
-				D21754DE1D65AE870055F55F /* ViewController.m */,
-				D21754E01D65AE870055F55F /* Main.storyboard */,
-				D21754E31D65AE870055F55F /* Assets.xcassets */,
-				D21754E51D65AE870055F55F /* LaunchScreen.storyboard */,
-				D21754E81D65AE870055F55F /* Info.plist */,
+				D21754EE1D65B3450055F55F /* Classes */,
 				D21754D71D65AE870055F55F /* Supporting Files */,
 			);
 			path = JDQqWithSocket;
@@ -74,9 +84,75 @@
 		D21754D71D65AE870055F55F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D21754E31D65AE870055F55F /* Assets.xcassets */,
+				D21754E81D65AE870055F55F /* Info.plist */,
 				D21754D81D65AE870055F55F /* main.m */,
+				D21754F51D65C8BD0055F55F /* messages.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D21754EE1D65B3450055F55F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D21754FD1D65D4A80055F55F /* Category */,
+				D21754F21D65B3770055F55F /* Others */,
+				D21754F11D65B3660055F55F /* Controller */,
+				D21754F01D65B35C0055F55F /* View */,
+				D21754EF1D65B34D0055F55F /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D21754EF1D65B34D0055F55F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D21754F71D65C92E0055F55F /* JDMessage.h */,
+				D21754F81D65C92E0055F55F /* JDMessage.m */,
+				D21754FA1D65CC7C0055F55F /* JDMessageCellFrame.h */,
+				D21754FB1D65CC7C0055F55F /* JDMessageCellFrame.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D21754F01D65B35C0055F55F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D21754E01D65AE870055F55F /* Main.storyboard */,
+				D21754E51D65AE870055F55F /* LaunchScreen.storyboard */,
+				D21755011D65D8880055F55F /* JDMessageCell.h */,
+				D21755021D65D8880055F55F /* JDMessageCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D21754F11D65B3660055F55F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D21754DD1D65AE870055F55F /* ViewController.h */,
+				D21754DE1D65AE870055F55F /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D21754F21D65B3770055F55F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D21754DA1D65AE870055F55F /* AppDelegate.h */,
+				D21754DB1D65AE870055F55F /* AppDelegate.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		D21754FD1D65D4A80055F55F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D21754FE1D65D5290055F55F /* NSString+Extension.h */,
+				D21754FF1D65D5290055F55F /* NSString+Extension.m */,
+				D21755041D65E2120055F55F /* UIImage+Extension.h */,
+				D21755051D65E2120055F55F /* UIImage+Extension.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +214,7 @@
 			files = (
 				D21754E71D65AE870055F55F /* LaunchScreen.storyboard in Resources */,
 				D21754E41D65AE870055F55F /* Assets.xcassets in Resources */,
+				D21754F61D65C8BD0055F55F /* messages.plist in Resources */,
 				D21754E21D65AE870055F55F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21754DF1D65AE870055F55F /* ViewController.m in Sources */,
+				D21755001D65D5290055F55F /* NSString+Extension.m in Sources */,
+				D21754FC1D65CC7C0055F55F /* JDMessageCellFrame.m in Sources */,
+				D21755031D65D8880055F55F /* JDMessageCell.m in Sources */,
+				D21754F91D65C92E0055F55F /* JDMessage.m in Sources */,
 				D21754DC1D65AE870055F55F /* AppDelegate.m in Sources */,
 				D21754D91D65AE870055F55F /* main.m in Sources */,
+				D21755061D65E2120055F55F /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JDQqWithSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Myself.JDQqWithSocket;
@@ -274,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = JDQqWithSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Myself.JDQqWithSocket;
@@ -300,6 +384,7 @@
 				D21754ED1D65AE870055F55F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
